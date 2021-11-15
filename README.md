@@ -9,7 +9,7 @@ It is split into 3 files:
     * POS
     * Tf-idf scores (overall corpus and split by Party)
     
-- R file
+- US-Voter-ID_Nov21.md
     * 
     * Filter extremes: remove words that occur in less that n=5 documents or in more than 50% of all documents
     * Join common bigrams
