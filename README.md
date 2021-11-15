@@ -15,8 +15,7 @@ It is split into 3 files:
     * Dataset preparation for similarity network in Iramuteq
  
 - _Word embedding.ipynb_
-    * Word embedding model (using the Word2vec implementation provided by the gensim package) and visualisation
-    * Co-occurrence network
-    * Temporal dimension: dynamic word embedding model, word embedding model per Congress
+    * Word embedding model for each Party (using the Word2vec implementation provided by the gensim package) 
+    * visualisation of overall model and key word "identification"
 
 ***
