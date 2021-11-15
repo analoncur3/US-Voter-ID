@@ -79,18 +79,6 @@ labs(x = NULL, y = "word frequency")
 
 <img src="US-Voter-ID_Nov21_files/figure-gfm/unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
 
-``` r
-ggsave(
-  "wordfreq.jpg",
-  plot = last_plot(),
-  scale = 1,
-  path = "C:/Users/analo/OneDrive - University of Glasgow/University of Glasgow/Thesis/CHAPTERS/DATA/Voter ID laws debates (US)/",
-  width = 10,
-  height = 8,
-  dpi = 1000
-)
-```
-
 #### Keyness analysis
 
 A keyness analysis is first conducted to identify which words are more
@@ -113,20 +101,7 @@ result_keyness <- textstat_keyness(dfm, target = 1L, measure = c("chi2"),sort = 
 textplot_keyness(result_keyness, labelsize = 4,labelcolor = "black", color = c("blue", "red"), min_count = 10, n = 25)
 ```
 
-<img src="US-Voter-ID_Nov21_files/figure-gfm/unnamed-chunk-9-1.png" style="display: block; margin: auto;" />
-
-``` r
-library(ggplot2)
-ggsave(
-  "keyness.jpg",
-  plot = last_plot(),
-  scale = 1,
-  path = "C:/Users/analo/OneDrive - University of Glasgow/University of Glasgow/Thesis/CHAPTERS/DATA/Voter ID laws debates (US)/",
-  width = 12,
-  height = 10,
-  dpi = 1000
-)
-```
+<img src="US-Voter-ID_Nov21_files/figure-gfm/unnamed-chunk-8-1.png" style="display: block; margin: auto;" />
 
 #### Target Keyword Analysis
 
@@ -211,7 +186,7 @@ ggplot(data = target_rep, mapping = aes(x = reorder(feature, chi2), chi2)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-![](US-Voter-ID_Nov21_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](US-Voter-ID_Nov21_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
 ``` r
 target_dem <- tstat_key_inside_dem %>% slice_max(order_by = chi2, n = 20)
@@ -220,7 +195,7 @@ ggplot(data = target_dem, mapping = aes(x = reorder(feature, chi2), chi2)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-![](US-Voter-ID_Nov21_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](US-Voter-ID_Nov21_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 #### Preparing data to visualise in Iramuteq
 
