@@ -1,5 +1,5 @@
 # US-Voter-ID
-This repository contains analyses of US Congressional Debates over __voter ID__. The analyses conducted are inductive and bottom up, meaning that the interest lies in recognising and interpreting patterns emerging from the data. 
+This repository contains analyses of US Congressional Debates over __voter ID__. 
 
 It is split into 3 files:
 - _Descriptive Stats.ipynb_
